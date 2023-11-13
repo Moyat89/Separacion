@@ -334,7 +334,7 @@ table tbody * {
     }
 
     body{
-        overflow-y: hidden;
+        overflow-y: auto;
     }
 
     .content-cover {
