@@ -1,0 +1,28 @@
+{
+  "name": "pac1",
+  "version": "1.0.0",
+  "description": "PAC 1 Asignatura: Herramientas HTML y CSS",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build",
+    "postcss": "postcss --config postcss.json"
+  },
+  "keywords": [],
+  "author": "moyat",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "latest",
+    "postcss": "^8.4.31",
+    "postcss-responsive": "^0.6.0",
+    "sharp": "^0.31.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss-nested": "^6.0.1",
+    "rfs": "^10.0.0",
+    "run": "^1.4.0"
+  }
+}

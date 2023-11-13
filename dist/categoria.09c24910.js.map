@@ -1,0 +1,1 @@
+{"mappings":"AAAA,SAAS,QAAQ,IAAI;IAClB,SAAS,OAAO,CAAC,OAAK;AACzB","sources":["src/js/script.js"],"sourcesContent":["function gotoWeb(name){\r\n   location.replace(name+\".html\");\r\n}"],"names":[],"version":3,"file":"categoria.09c24910.js.map","sourceRoot":"/__parcel_source_root/"}

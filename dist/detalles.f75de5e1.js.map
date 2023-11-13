@@ -1,0 +1,1 @@
+{"mappings":"AACA,SAAS;IACT,SAAS,cAAc,CAAC,WAAW,KAAK,GAAG;AAC3C","sources":["src/scripts/main.js"],"sourcesContent":["\r\nfunction resize(){\r\ndocument.getElementById(\"myFrame\").width = \"250\"; \r\n}"],"names":[],"version":3,"file":"detalles.f75de5e1.js.map","sourceRoot":"/__parcel_source_root/"}

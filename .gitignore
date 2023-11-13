@@ -1,0 +1,5 @@
+/node_modules
+# eslint cache
+.eslintcache
+# add .env file to .gitignore
+echo ".env" >> .gitignore
