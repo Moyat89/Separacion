@@ -7,15 +7,18 @@
 html {
   text-shadow: 0 0 8px #f003, -2px -2px 6px #0f03, 2px 2px 4px #0ff3;
   color: #82bb87;
+  background-image: url("portadabackground.c63bb009.png");
+  background-position: -70vw;
+  background-size: cover;
+  min-height: 100%;
   font-family: Share Tech Mono, sans-serif;
   font-size: clamp(1rem, .8rem + .8vi, 1.2rem);
 }
 
 body {
-  background-image: url("portadabackground.c63bb009.png");
-  background-size: cover;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a:hover {
@@ -29,8 +32,6 @@ a:hover {
 }
 
 .container-cover {
-  width: 100vw;
-  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -38,15 +39,15 @@ a:hover {
   text-align: center;
   background-color: #020507cc;
   border: 2px solid #000;
-  width: 40vw;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: clamp(0rem, 12.5vi - 3.75rem, 6.25rem);
-  right: clamp(0rem, 20vi - 6rem, 10rem);
+  right: clamp(0rem, 16vi - 4.8rem, 8rem);
   overflow: hidden;
 }
 
 .nav-scroll-gen ul {
-  direction: row;
   background-color: #020507;
   background-position: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -79,7 +80,7 @@ a:hover {
 .text-cover {
   scrollbar-color: black #82bb87;
   text-align: justify;
-  height: 75vh;
+  height: 95vh;
   padding-left: 5%;
   padding-right: 5%;
   line-height: 2rem;
@@ -90,13 +91,13 @@ a:hover {
 .header h1 {
   text-align: center;
   padding: 5% 5% 2.5%;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, .6rem + 3vi, 3rem);
 }
 
 .header h2 {
   text-align: center;
   padding: 2.5% 5% 5%;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, .7rem + 1vi, 1.5rem);
 }
 
 header h1 a {
@@ -105,17 +106,7 @@ header h1 a {
   text-decoration: none;
 }
 
-.footer-cover {
-  color: #fff;
-  position: fixed;
-  bottom: 0;
-  right: 13%;
-}
-
 .container-gen {
-  height: 100vh;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
   padding-left: clamp(0rem, 25vi - 7.5rem, 12.5rem);
   padding-right: clamp(0rem, 25vi - 7.5rem, 12.5rem);
 }
@@ -123,50 +114,43 @@ header h1 a {
 .header-gen {
   text-align: center;
   background-color: #020507cc;
-  padding-top: 5vh;
-  padding-bottom: 2vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
 }
 
 .header-gen h1 a {
   text-align: left;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1.2rem + 1vi, 2rem);
 }
 
 .header-gen h2 {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, .7rem + 1vi, 1.5rem);
 }
 
 .category-wrapper {
+  background-color: #020507cc;
   border: 2px solid #000;
-  height: 80vh;
-  display: flex;
-}
-
-.categorias {
-  text-align: left;
-  width: 25vw;
-}
-
-.categorias ul {
-  list-style-type: none;
+  line-height: 5vh;
+  overflow: hidden;
 }
 
 .categorias ul li a {
-  cursor: pointer;
   text-transform: uppercase;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   color: #8cc48f;
+  text-align: center;
   background-position: center;
   background-size: cover;
-  border-color: #82bb87;
-  outline: none;
-  justify-content: center;
+  border: 2px solid #82bb87;
   align-items: center;
-  height: 19.95vh;
+  height: 20vh;
+  margin: 10px;
+  padding-top: 9vh;
   font-size: clamp(1rem, 4vi - .2rem, 3rem);
   font-weight: 700;
   text-decoration: none;
-  display: flex;
+  display: block;
 }
 
 .categorias ul li a:hover {
@@ -193,7 +177,6 @@ header h1 a {
   text-align: justify;
   scrollbar-color: black #82bb87;
   text-align: center;
-  background-color: #020507cc;
   align-items: center;
   width: 100%;
   padding-left: 5%;
@@ -203,7 +186,8 @@ header h1 a {
 }
 
 #text-placeholder {
-  padding-top: 40%;
+  padding-top: 35vh;
+  display: none;
 }
 
 #current {
@@ -259,9 +243,13 @@ figure {
   text-align: center;
 }
 
+figure img {
+  width: 75vw;
+}
+
 table {
   padding: clamp(0rem, 2vi - .6rem, 1rem);
-  font-size: clamp(.75rem, .48rem + .9vi, 1.2rem);
+  font-size: clamp(.75rem, .6rem + .5vi, 1rem);
 }
 
 table * {
@@ -275,48 +263,56 @@ table thead th, table tbody * {
   padding-bottom: 1.5%;
 }
 
-@media screen and (width <= 992px) {
-  body {
-    overflow-y: auto;
-  }
-
-  .container-gen {
-    height: 100%;
-    margin: 0;
-  }
-
+@media screen and (width >= 571px) {
   .content-cover {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    right: 0;
-  }
-
-  .category-wrapper {
-    display: inline;
-  }
-
-  .categorias {
-    text-align: center;
-    width: 95%;
-    padding-left: 3%;
-  }
-
-  .categorias ul li {
-    border: 2px solid;
-    height: 100%;
-  }
-
-  .text-category {
-    min-height: 80vh;
-  }
-
-  #text-placeholder {
-    display: none;
+    width: 90vw;
+    height: 90vh;
   }
 
   figure img {
     width: 70%;
+  }
+}
+
+@media screen and (width >= 992px) {
+  html {
+    background-position: initial;
+  }
+
+  .content-cover {
+    width: 40vw;
+    height: 80vh;
+  }
+
+  .container-gen {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .category-wrapper {
+    height: 85vh;
+    display: flex;
+  }
+
+  .categorias ul {
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .categorias ul li a {
+    justify-content: center;
+    width: 18vw;
+    padding: 0;
+    font-size: 2vw;
+    display: flex;
+  }
+
+  #text-placeholder {
+    display: block;
+  }
+
+  figure img {
+    width: 60%;
   }
 }
 

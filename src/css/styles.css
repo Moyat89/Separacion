@@ -13,14 +13,18 @@ html {
         2px 2px 4px rgb(0 255 255 / .2);
     color: rgb(130, 187, 135);
     font-size: responsive(1rem, 1.2rem, 400px, 800px);
+    background-image: url(../img/portadabackground.png);
+    background-size: cover;
+    min-height: 100%;
+    background-position: -70vw;
 }
 
 body {
 
     padding: 0;
-    overflow: hidden;
-    background-image: url(../img/portadabackground.png);
-    background-size: cover;
+    overflow-y: auto;
+    overflow-x: hidden;
+
 }
 
 a:hover {
@@ -34,20 +38,19 @@ a:hover {
 }
 
 .container-cover {
-
-    min-height: 100vh;
-    width: 100vw;
     overflow: hidden;
 }
+
 
 .content-cover {
 
     background-color: rgba(2, 5, 7, 0.8);
-    width: 40vw;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
     top: responsive(0px, 100px);
     position: absolute;
-    right: responsive(0rem, 10rem);
+    right: responsive(0rem, 8rem);
     overflow-y: hidden;
     overflow-x: hidden;
     border: 2px solid black;
@@ -58,7 +61,6 @@ a:hover {
     list-style: none;
     background-position: right;
     display: grid;
-    direction: row;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -94,7 +96,7 @@ a:hover {
     overflow-y: scroll;
     scrollbar-color: black rgb(130, 187, 135);
     overflow-x: hidden;
-    height: 75vh;
+    height: 95vh;
     padding-left: 5%;
     padding-right: 5%;
     text-align: justify;
@@ -103,14 +105,14 @@ a:hover {
 
 .header h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: responsive(1.5rem, 3rem);
     padding: 5% 5% 2.5% 5%;
 
 }
 
 .header h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: responsive(1rem, 1.5rem);
     padding: 2.5% 5% 5% 5%;
 }
 
@@ -120,77 +122,58 @@ header h1 a {
     letter-spacing: 1vw;
 }
 
-.footer-cover {
-    position: fixed;
-    bottom: 0px;
-    right: 13%;
-    color: white;
-}
 
 /*Categoria*/
 
 .container-gen {
     padding-left: responsive(0px, 200px);
     padding-right: responsive(0px, 200px);
-    height: 100vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
 
 }
 
 .header-gen {
-    padding-top: 5vh;
-    padding-bottom: 2vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: rgba(2, 5, 7, 0.8);
     text-align: center;
+    overflow: hidden;
 }
 
 .header-gen h1 a {
-    font-size: 2rem;
+    font-size: responsive(1.5rem, 2rem);
     text-align: left;
 
 }
 
 .header-gen h2 {
-    font-size: 1.5rem;
+    font-size: responsive(1rem, 1.5rem);
 
 }
 
 .category-wrapper {
-    height: 80vh;
     border: 2px solid black;
-    display: flex;
-}
-
-
-
-.categorias {
-    text-align: left;
-    width: 25vw;
-
-}
-
-.categorias ul {
-    list-style-type: none;
+    overflow: hidden;
+    line-height: 5vh;
+    background-color: rgba(2, 5, 7, 0.8);
 
 }
 
 .categorias ul li a {
     background-size: cover;
-    background-position: center;
-    cursor: pointer;
-    outline: none;
     text-transform: uppercase;
-    font-size: responsive(1rem,3rem);
+    background-position: center;
+    font-size: responsive(1rem, 3rem);
     font-weight: 700;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: rgb(140, 196, 143);
-    border-color: rgb(130, 187, 135);
+    border: 2px solid rgb(130, 187, 135);
     align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 19.95vh;
     text-decoration: none;
+    height: 20vh;
+    display: block;
+    text-align: center;
+    padding-top: 9vh;
+    margin: 10px;
 }
 
 .categorias ul li a:hover {
@@ -204,7 +187,6 @@ header h1 a {
 
 .helly {
     background-image: url(../img/helly.jpg);
-
 }
 
 .dylan {
@@ -222,7 +204,6 @@ header h1 a {
     overflow-y: scroll;
     scrollbar-color: black rgb(130, 187, 135);
     overflow-x: hidden;
-    background-color: rgba(2, 5, 7, 0.8);
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
@@ -231,7 +212,8 @@ header h1 a {
 }
 
 #text-placeholder {
-    padding-top: 40%;
+    padding-top: 35vh;
+    display: none;
 }
 
 #current {
@@ -273,26 +255,31 @@ article a {
 .trailer {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    text-align: center;;
+    text-align: center;
+    ;
 }
 
-iframe{
-    width: responsive(280px,560px);
-    height: responsive(157.5px,315px);
+iframe {
+    width: responsive(280px, 560px);
+    height: responsive(157.5px, 315px);
 }
+
 .detalles {
     padding: 2rem;
     line-height: 2rem;
-
 }
 
 figure {
     text-align: center;
 }
 
+figure img {
+    width: 75vw;
+}
+
 table {
-    padding: responsive(0px,1rem);
-    font-size:responsive(12px,1.2rem);
+    padding: responsive(0px, 1rem);
+    font-size: responsive(12px, 1rem);
 }
 
 table * {
@@ -313,57 +300,57 @@ table tbody * {
     padding-top: 1.5%;
 }
 
-@media screen and (max-width: 992px) {
 
-    body {
-        overflow-y: auto;
+@media screen and (min-width: 571px) {
+
+
+    .content-cover {
+        height: 90vh;
+        width: 90vw;
     }
 
-    .container-gen{
-        margin: 0;
-        height: 100%;
+    figure img {
+        width: 70%;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    html {
+        background-position: initial;
     }
 
     .content-cover {
-        height: 100vh;
-        width: 100vw;
-        right:0;
-        top: 0px;
+        width: 40vw;
+        height: 80vh;
     }
 
-    .category-wrapper {
-        display: inline;
+    .container-gen{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .category-wrapper{
+        display: flex;
+        height: 85vh;
+    }
+    .categorias ul {
+        justify-content: center;
+        list-style-type: none;
     }
 
-    .categorias {
-        width: 95%;
-        padding-left: 3%;
-        text-align: center;
-
+    .categorias ul li a {
+        display: flex;
+        width: 18vw;
+        padding: 0;
+        justify-content: center;
+        font-size: 2vw;
     }
 
-    .categorias ul li{
-        height: 100%;
-        border: solid 2px; 
-
+    #text-placeholder {
+        display:block;
     }
-
-    .text-category{
-        min-height: 80vh;
+    
+    figure img {
+        width: 60%;
     }
-
-    #text-placeholder{
-        display: none;
-    }
-
-    figure img{
-        width: 70%;
-    }
-
-
-
-
-
-
-
 }
