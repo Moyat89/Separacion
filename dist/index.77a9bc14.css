@@ -31,10 +31,6 @@ a:hover {
   background-color: #fff;
 }
 
-.container-cover {
-  overflow: hidden;
-}
-
 .content-cover {
   text-align: center;
   background-color: #020507cc;
@@ -85,7 +81,6 @@ a:hover {
   padding-right: 5%;
   line-height: 2rem;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 .header h1 {
@@ -181,8 +176,7 @@ header h1 a {
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 #text-placeholder {
@@ -263,7 +257,19 @@ table thead th, table tbody * {
   padding-bottom: 1.5%;
 }
 
+.pictures {
+  display: flex;
+}
+
+.pictures img {
+  width: 50%;
+}
+
 @media screen and (width >= 571px) {
+  body {
+    overflow-y: scroll;
+  }
+
   .content-cover {
     width: 90vw;
     height: 90vh;
@@ -272,6 +278,10 @@ table thead th, table tbody * {
   figure img {
     width: 70%;
   }
+
+  .text-cover, .text-category {
+    overflow-y: scroll;
+  }
 }
 
 @media screen and (width >= 992px) {
@@ -279,9 +289,17 @@ table thead th, table tbody * {
     background-position: initial;
   }
 
+  body {
+    overflow-y: hidden;
+  }
+
   .content-cover {
     width: 40vw;
     height: 80vh;
+  }
+
+  .text-cover {
+    overflow-y: scroll;
   }
 
   .container-gen {
@@ -313,6 +331,10 @@ table thead th, table tbody * {
 
   figure img {
     width: 60%;
+  }
+
+  .text-category {
+    overflow-y: scroll;
   }
 }
 

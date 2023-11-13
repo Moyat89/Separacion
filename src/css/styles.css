@@ -37,10 +37,6 @@ a:hover {
     cursor: not-allowed;
 }
 
-.container-cover {
-    overflow: hidden;
-}
-
 
 .content-cover {
 
@@ -93,7 +89,6 @@ a:hover {
 
 
 .text-cover {
-    overflow-y: scroll;
     scrollbar-color: black rgb(130, 187, 135);
     overflow-x: hidden;
     height: 95vh;
@@ -201,7 +196,7 @@ header h1 a {
 
 .text-category {
     text-align: justify;
-    overflow-y: scroll;
+    overflow-y: hidden;
     scrollbar-color: black rgb(130, 187, 135);
     overflow-x: hidden;
     padding-left: 5%;
@@ -300,10 +295,20 @@ table tbody * {
     padding-top: 1.5%;
 }
 
+.pictures{
+    display: flex;
+}
+
+.pictures img{
+    width: 50%;
+}
+
 
 @media screen and (min-width: 571px) {
 
-
+    body{
+        overflow-y: scroll;
+    }
     .content-cover {
         height: 90vh;
         width: 90vw;
@@ -312,18 +317,36 @@ table tbody * {
     figure img {
         width: 70%;
     }
-}
 
+    .text-cover{
+        overflow-y: scroll;
+    }
+    .text-category{
+        overflow-y: scroll;
+    }
+
+
+}
 
 @media screen and (min-width: 992px) {
     html {
         background-position: initial;
     }
 
+    body{
+        overflow-y: hidden;
+    }
+
     .content-cover {
         width: 40vw;
         height: 80vh;
     }
+
+    .text-cover{
+        overflow-y: scroll;
+    }
+
+
 
     .container-gen{
         margin-top: 5px;
@@ -353,4 +376,9 @@ table tbody * {
     figure img {
         width: 60%;
     }
+
+    .text-category{
+        overflow-y: scroll;
+    }
+
 }
