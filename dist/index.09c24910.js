@@ -17,7 +17,5 @@ function entrar() {
     document.getElementById("desplegable").style.backgroundColor = "rgba(2, 5, 7, 0.8)";
     document.getElementById("desplegable").style.border = "2px solid black";
 }
-window.checkin = checkin;
-window.entrar = entrar;
 
 //# sourceMappingURL=index.09c24910.js.map
