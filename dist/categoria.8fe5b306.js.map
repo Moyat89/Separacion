@@ -1,1 +1,0 @@
-{"mappings":"A,+D","sources":["<anon>","src/js/script.js"],"sourcesContent":["function gotoWeb(name) {\n    document.location = name + \".html\";\n}\n\n//# sourceMappingURL=categoria.8fe5b306.js.map\n","function gotoWeb(name){\r\n    document.location = name+\".html\";\r\n}"],"names":[],"version":3,"file":"categoria.8fe5b306.js.map"}

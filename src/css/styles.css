@@ -31,12 +31,6 @@ a:hover {
     color: white;
 }
 
-.current {
-    background-color: white;
-    pointer-events: none;
-    cursor: not-allowed;
-}
-
 
 .content-cover {
 
@@ -295,20 +289,21 @@ table tbody * {
     padding-top: 1.5%;
 }
 
-.pictures{
+.pictures {
     display: flex;
 }
 
-.pictures img{
+.pictures img {
     width: 50%;
 }
 
 
 @media screen and (min-width: 571px) {
 
-    body{
+    body {
         overflow-y: scroll;
     }
+
     .content-cover {
         height: 90vh;
         width: 90vw;
@@ -318,10 +313,11 @@ table tbody * {
         width: 70%;
     }
 
-    .text-cover{
+    .text-cover {
         overflow-y: scroll;
     }
-    .text-category{
+
+    .text-category {
         overflow-y: scroll;
     }
 
@@ -333,7 +329,7 @@ table tbody * {
         background-position: initial;
     }
 
-    body{
+    body {
         overflow-y: auto;
     }
 
@@ -342,20 +338,22 @@ table tbody * {
         height: 80vh;
     }
 
-    .text-cover{
+    .text-cover {
         overflow-y: scroll;
     }
 
 
 
-    .container-gen{
+    .container-gen {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-    .category-wrapper{
+
+    .category-wrapper {
         display: flex;
         height: 85vh;
     }
+
     .categorias ul {
         justify-content: center;
         list-style-type: none;
@@ -370,14 +368,14 @@ table tbody * {
     }
 
     #text-placeholder {
-        display:block;
+        display: block;
     }
-    
+
     figure img {
         width: 60%;
     }
 
-    .text-category{
+    .text-category {
         overflow-y: scroll;
     }
 
