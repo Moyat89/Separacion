@@ -14,6 +14,7 @@
   "author": "moyat",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.23.3",
     "parcel": "latest",
     "postcss": "^8.4.31",
     "postcss-responsive": "^0.6.0",
