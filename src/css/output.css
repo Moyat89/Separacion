@@ -13,7 +13,6 @@ html {
   background-image: url(../img/portadabackground.png);
   background-size: cover;
   min-height: 100%;
-  background-position: -70vw;
 }
 
 body {
@@ -24,6 +23,17 @@ body {
 
 a:hover {
   color: white;
+}
+
+.inicio {
+  width: responsive(200px, 400px);
+  height: responsive(100px, 200px);
+  font-size: responsive(1rem, 1.5rem);
+  border: solid 5px rgb(130, 187, 135);
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.5), -2px -2px 6px rgba(0, 255, 0, 0.5), 2px 2px 4px rgba(0, 255, 255, 0.5);
+  text-transform: uppercase;
+  z-index: 1000;
+  position: absolute;
 }
 
 .content-cover {
@@ -37,6 +47,9 @@ a:hover {
   overflow-y: hidden;
   overflow-x: hidden;
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-scroll-gen ul {

@@ -12,11 +12,13 @@
   </style>
   <link rel="icon" type="image/x-icon" href="img/computadora.png">
 </head>
-<body>
+<body onload="checkin()" id="body">
+  <script src="js/script.js"></script>
   <main>
-    <div class="content-cover">
+    <div class="content-cover" id="desplegable">
       <include src="navgen.html"></include>
-      <div class="text-cover">
+      <button onclick="entrar()" type="button" class="inicio" id="boton">Iniciar Sesión<br>Lumon Industries</button>
+      <div class="text-cover" id="text">
         <header class="header">
           <h1><a href="index.html">SEPARACIÓN</a></h1>
           <h2>Fan Web sobre Severance</h2>
