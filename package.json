@@ -8,7 +8,7 @@
     "dev": "parcel",
     "start": "parcel",
     "build": "parcel build src/index.html",
-    "postcss": "postcss --config postcss.json"
+    "postcss": "postcss --config postcss.config.json"
   },
   "keywords": [],
   "author": "moyat",
