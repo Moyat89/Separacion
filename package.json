@@ -6,8 +6,8 @@
   "browserslist": "> 0.5%,last 20 years",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "start": "parcel",
+    "build": "parcel build",
     "postcss": "postcss --config postcss.json"
   },
   "keywords": [],
@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.23.3",
-    "parcel": "^2.10.2",
+    "parcel": "latest",
     "postcss": "^8.4.31",
     "postcss-responsive": "^0.6.0",
     "posthtml-include": "^1.7.4",
@@ -26,9 +26,5 @@
     "postcss-nested": "^6.0.1",
     "rfs": "^10.0.0",
     "run": "^1.4.0"
-  },
-  "targets": {
-    "main": false
   }
-  
 }
