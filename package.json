@@ -5,7 +5,6 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%,last 20 years",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel",
     "start": "parcel",
     "build": "parcel build",
@@ -16,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.23.3",
-    "parcel": "^2.10.2",
+    "parcel": "latest",
     "postcss": "^8.4.31",
     "postcss-responsive": "^0.6.0",
     "posthtml-include": "^1.7.4",
