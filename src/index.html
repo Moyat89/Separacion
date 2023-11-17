@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +12,20 @@
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
   </style>
   <link rel="icon" type="image/x-icon" href="img/computadora.png">
-  <script type="text/javascript" src=js/script.js></script>
+  <script type="module" src=js/script.js></script>
 </head>
+<!--Función que se llama al cargarse el body y esconde el contenido para que haya un botón de entrada-->
+
 <body onload="checkin()" id="body">
   <main>
+    <!--Envoltorio general-->
     <div class="content-cover" id="desplegable">
+      <!--Menú de navegación con include-->
       <include src="navgen.html"></include>
+      <!-- Botón con función para mostrar el contenido-->
       <button onclick="entrar()" type="button" class="inicio" id="boton">Iniciar Sesión<br>Lumon Industries</button>
       <div class="text-cover" id="text">
+        <!--Header con titulo y subtitulo-->
         <header class="header">
           <h1><a href="index.html">SEPARACIÓN</a></h1>
           <h2>Fan Web sobre Severance</h2>
@@ -30,4 +37,5 @@
     </div>
   </main>
 </body>
+
 </html>
