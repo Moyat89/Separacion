@@ -19,4 +19,4 @@ function entrar() {
   document.getElementById("desplegable").style.border = "2px solid black";
 }
 
-checking();
+checkin();
