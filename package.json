@@ -22,8 +22,6 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
-    "@babel/core": "^7.23.3",
-    "parcel-bundler": "^1.12.5",
     "parcel": "latest",
     "postcss-nested": "^6.0.1",
     "postcss-responsive-type": "^1.0.0",
