@@ -1,31 +1,38 @@
 {
-  "name": "pac1",
+  "name": "separacion_pac1",
   "version": "1.0.0",
-  "description": "PAC 1 Asignatura: Herramientas HTML y CSS",
+  "description": "ejercicio para la asignatura html&css",
   "source": "src/index.html",
   "browserslist": "> 0.5%,last 20 years",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
-    "postcss": "postcss --config postcss.config.json"
+    "build": "parcel build"
   },
-  "keywords": [],
-  "author": "moyat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moyat89/Separacion.git"
+  },
+  "keywords": [
+    "pac1",
+    "html",
+    "css",
+    "herramientas",
+    "parcel"
+  ],
+  "author": "Teo Alarcon Moya",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moyat89/Separacion/issues"
+  },
+  "homepage": "https://github.com/Moyat89/Separacion#readme",
   "devDependencies": {
-    "@babel/core": "^7.23.3",
-    "parcel": "latest",
+    "parcel": "^2.10.3",
     "postcss": "^8.4.31",
     "postcss-responsive": "^0.6.0",
-    "posthtml-include": "^1.7.4",
-    "sharp": "^0.31.3"
+    "posthtml-include": "^1.7.4"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.16",
-    "parcel": "latest",
-    "postcss-nested": "^6.0.1",
-    "postcss-responsive-type": "^1.0.0",
-    "rfs": "^10.0.0",
-    "run": "^1.4.0"
+    "parcel": "^2.10.3",
+    "postcss-responsive-type": "^1.0.0"
   }
 }
