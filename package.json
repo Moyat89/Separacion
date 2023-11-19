@@ -4,7 +4,6 @@
   "description": "PAC 1 Asignatura: Herramientas HTML y CSS",
   "source": "src/index.html",
   "browserslist": "> 0.5%,last 20 years",
-  "main": "script.js",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
@@ -24,6 +23,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "parcel-bundler": "^1.12.5",
+    "parcel": "latest",
     "postcss-nested": "^6.0.1",
     "postcss-responsive-type": "^1.0.0",
     "rfs": "^10.0.0",
