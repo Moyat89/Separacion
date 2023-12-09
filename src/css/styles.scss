@@ -22,7 +22,6 @@ html {
 
 body {
     padding: 0;
-    overflow-y: auto;
     overflow-x: hidden;
 
 }
@@ -71,12 +70,15 @@ a:hover {
         list-style: none;
         background-position: right;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 5px;
     }
 
     li {
         border: 1px black solid;
         padding: 0px;
+        text-align: center;
+
     }
 
     a {
@@ -86,7 +88,7 @@ a:hover {
         margin: 0px;
         width: 100%;
         height: 100%;
-        line-height: 5vh;
+        line-height: 50px;
         display: block;
         text-align: center;
     }
@@ -97,8 +99,30 @@ a:hover {
 
     }
 
+    img{
+        height: 95%;
+    }
+
 }
 
+@keyframes changelogo{
+    from {background-color: transparent;
+    content: url(../img/logo.svg);}
+    to {background-color: white;
+    content: url(../img/logo-transitioned.svg);}
+}
+
+.logo-portada{
+    content:url(../img/logo.svg);
+    background-color: transparent;
+    animation-duration: 10s;
+    animation-name: changelogo;
+    animation-iteration-count: 1;
+}
+
+.logo{
+    background-color: white;
+}
 
 .text-cover {
     scrollbar-color: black $color-theme;
@@ -108,15 +132,16 @@ a:hover {
     padding-right: 5%;
     text-align: justify;
     line-height: 2rem;
+    overflow-y: scroll;
+    padding-bottom: 100px
+
 }
 
 .header {
-
     h1 {
+        padding: 5% 5% 2.5% 5%;
         text-align: center;
         font-size: responsive(1.5rem, 3rem);
-        padding: 5% 5% 2.5% 5%;
-
     }
 
     h2 {
@@ -128,11 +153,22 @@ a:hover {
 
 }
 
+.cabecera{
+    text-align: center;
+    padding-top: 3%;
+}
 h1 a {
     text-decoration: none;
     color: white;
     letter-spacing: 1vw;
 }
+
+footer{
+    width: 100vw;
+    position: fixed;
+    bottom:0;
+}
+
 
 
 /*Categoria*/
@@ -140,6 +176,8 @@ h1 a {
 .container-gen {
     padding-left: responsive(0px, 200px);
     padding-right: responsive(0px, 200px);
+  
+
 
 }
 
@@ -230,6 +268,7 @@ h1 a {
     width: 100%;
     text-align: center;
     align-items: center;
+    padding-bottom: 10vh;
 }
 
 #text-placeholder {
@@ -373,12 +412,13 @@ table {
         width: 40vw;
         height: 80vh;
     }
-
+    .header-gen * {
+        padding-top: 0;
+        
+    }
     .text-cover {
         overflow-y: scroll;
     }
-
-
 
     .container-gen {
         margin-top: 5px;

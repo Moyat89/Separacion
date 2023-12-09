@@ -19,13 +19,14 @@
     <!--Envoltorio general-->
     <div class="content-cover" id="desplegable">
       <!--Menú de navegación con include-->
-      <include src="navgen.html"></include>
       <!-- Botón con función para mostrar el contenido-->
       <button type="button" class="inicio" id="boton">Iniciar Sesión<br>Lumon Industries</button>
       <div class="text-cover" id="text">
         <!--Header con titulo y subtitulo-->
         <header class="header">
-          <h1><a href="index.html">SEPARACIÓN</a></h1>
+          <div class="cabecera">
+            <img class="logo-portada" src="img/logo.svg" alt="logo"/>
+            <h1> <a href="index.html">SEPARACIÓN</a></h1> </div>
           <h2>Fan Web sobre Severance</h2>
         </header>
         <p>Bienvenidos a Separación, la fan web de la nueva serie de <span lang="en">Apple TV</span> <cite
@@ -34,6 +35,7 @@
       </div>
     </div>
   </main>
+  <footer><include src="navgen.html"></include></footer>
   <!--Función que esconde el contenido para que haya un botón de entrada-->
   <script type="text/javascript" src="js/checkIn.js"></script>
 </body>
