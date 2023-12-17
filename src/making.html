@@ -20,9 +20,10 @@
         <!--Header con titulo y subtitulo-->
         <header class="header-gen">
             <div class="cabecera">
-                <img class="logo" src="img/logo-transitioned.svg" alt="logo"/>
-              <h1> <a href="index.html">SEPARACIÓN</a></h1> </div>
-          </header>
+                <img class="logo-portada" src="img/logo.svg" alt="logo">
+                <h1><a href="index.html">SEPARACIÓN</a></h1>
+            </div>
+        </header>
         <!--Contenedor para el contenido de categoría más submenú de navegación-->
         <div class="category-wrapper">
             <nav class="categorias">
@@ -37,10 +38,11 @@
             <main class="text-category">
                 <article>
                     <h2>MAKING OF</h2>
-                    <figure>
-                        <img src="img/makingof.jpg" alt="Foto de los protagonistas de Severance">
-                        <figcaption>Foto: Atsushi Nishijima / Apple TV+</figcaption>
-                    </figure>
+                        <picture>
+                            <source media="(max-width: 570px)" srcset="img/arte-makingof-hero.webp">
+                            <source media="(min-width: 571px)" srcset="img/making_of.webp">
+                            <img src="img/making_of.webp" alt="Protagonistas de Severance">
+                        </picture>
                     <p>Una historia tan ambiciosa como la de <cite lang="en">Severance</cite> no se concibe sin
                         meticulosidad.
                         El creador Dan Erickson y los productores ejecutivos Nicholas Weinstock, Jackie Cohn y Ben
@@ -88,6 +90,8 @@
                             que podría ser una historia más interesante si la enraizamos más en su humanidad y en la
                             psicología de las personas.</q> — Dan Erickson, creador.</p>
                     <h3>El "Look" de Lumon</h3>
+                    <img src="img/lumon-industries.jpg" alt="Logo de Lumon Industries"
+                        style="margin-left: 30%;width: 40%;">
                     <p><q lang="en">Había trabajado con Ben (Stiller) antes; hicimos juntos <cite lang="en">Escape at
                                 Dannemora</cite>, ya desafíamos
                             nuestra relación al máximo en esa producción. Pasamos por muchos desafíos, pero fue una
@@ -114,6 +118,7 @@
                             había
                             considerado.</q> — Jessica Lee Gagné, directora de fotografía.</p>
                     <h3>El arte de la vigilancia</h3>
+                    <img src="img/camera_making.svg" class="camera" alt="Cámara" style="margin-left: 45%; width:10%;">
                     <p> <q>Dentro de la oficina, hay una estética liderada por cámaras de seguridad con un gran
                             movimiento angular.
                             Queríamos que sintieran que los estaban observando. Usamos cámara remotas con
@@ -141,7 +146,9 @@
             </main>
         </div>
     </div>
-    <footer><include src="navgen.html"></include></footer>
+    <footer>
+        <include src="navgen.html"></include>
+    </footer>
 </body>
 
 </html>

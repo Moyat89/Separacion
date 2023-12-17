@@ -20,9 +20,10 @@
         <!--Header con titulo y subtitulo-->
         <header class="header-gen">
             <div class="cabecera">
-                <img class="logo" src="img/logo-transitioned.svg" alt="logo"/>
-              <h1> <a href="index.html">SEPARACIÓN</a></h1> </div>
-          </header>
+                <img class="logo-portada" src="img/logo.svg" alt="logo">
+                <h1> <a href="index.html">SEPARACIÓN</a></h1>
+            </div>
+        </header>
         <!--Contenedor para el contenido de categoría más submenú de navegación-->
         <div class="category-wrapper">
             <nav class="categorias">
@@ -37,11 +38,16 @@
             <main class="text-category">
                 <article>
                     <h2> CAPITULOS</h2>
-                    <figure>
-                        <img src="img/caps_img.jpg" alt="Helly y Dylan con una pelota mientras el supervisor los mira">
-                    </figure>
+                    <picture>
+                        <source media="(max-width: 570px)" srcset="img/chapters-hero.webp">
+                        <source media="(min-width: 571px)" srcset="img/chapters.webp">
+                        <img src="img/chapters.webp" alt="Protagonistas de Severance">
+                    </picture>
                     <p>La primera temporada de <cite lang="en">Severance</cite> terminó el 8 de Abril de 2022. A
                         continuación puedes encontrar una lista de los capítulos y sus detalles de producción:</p>
+                    <figure>
+                        <img src="img/book-open.svg" style="height: 15vh;" alt="Libro abriéndose">
+                    </figure>
                     <table>
                         <thead>
                             <tr>
@@ -155,12 +161,17 @@
                             </tr>
                         </tbody>
                     </table>
+                    <figure>
+                        <img src="img/end.svg" style="height: 15vh;" alt="Final del libro">
+                    </figure>
 
                 </article>
             </main>
         </div>
     </div>
-    <footer><include src="navgen.html"></include></footer>
+    <footer>
+        <include src="navgen.html"></include>
+    </footer>
 </body>
 
 </html>

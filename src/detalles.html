@@ -20,9 +20,10 @@
         <!--Header con titulo y subtitulo-->
         <header class="header-gen">
             <div class="cabecera">
-                <img class="logo" src="img/logo-transitioned.svg" alt="logo"/>
-              <h1> <a href="index.html">SEPARACIÓN</a></h1> </div>
-          </header>
+                <img class="logo-portada" src="img/logo.svg" alt="logo">
+                <h1> <a href="index.html">SEPARACIÓN</a></h1>
+            </div>
+        </header>
 
         <!--Contenedor para el contenido de categoría más submenú de navegación-->
         <div class="category-wrapper">
@@ -38,7 +39,15 @@
             <main class="text-category">
                 <article>
                     <h2>DETALLES SOBRE SEVERANCE</h2>
+                    <picture>
+                        <source media="(max-width: 570px)" srcset="img/detalles-severance-hero.webp">
+                        <source media="(min-width: 571px)" srcset="img/detalles-severance.webp">
+                        <img src="img/detalles-severance.webp" alt="Protagonistas de Severance">
+                    </picture>
                     <h3>Ficha técnica</h3>
+                    <figure>
+                        <img class="ficha" src="img/ficha.svg" alt="Ficha genérica">
+                    </figure>
                     <ul class="detalles">
                         <li>Fecha de Estreno: 18 de Febrero de 2022</li>
                         <li>Creador: <a href="https://en.wikipedia.org/wiki/Dan_Erickson" hreflang="en" target="_blank">
@@ -75,6 +84,8 @@
                         otra.Cuando están en el trabajo no recuerdan nada de afuera y cuando están en casa no recuerdan
                         nada del trabajo, un sueño para muchos.
                     </p>
+                    <img src="img/mark_protagonista.jpg" alt="Mark, protagonista de Severance"
+                        style="margin-left: 30%;width:40%;">
                     <p>Uno de los empleos, Mark (<a href="https://es.wikipedia.org/wiki/Adam_Scott_(actor)"
                             target="_blank">Adam Scott</a>) gradualmente empieza a sospechar de esta vida idilica y de
                         las intenciones de Lumen, descubriendo una red de conspiraciones en la empresa y un proyecto
@@ -99,7 +110,9 @@
 
         </div>
     </div>
-    <footer><include src="navgen.html"></include></footer>
+    <footer>
+        <include src="navgen.html"></include>
+    </footer>
 </body>
 
 </html>
