@@ -29,7 +29,8 @@
     "parcel": "^2.10.3",
     "postcss": "^8.4.31",
     "postcss-responsive": "^0.6.0",
-    "posthtml-include": "^1.7.4"
+    "posthtml-include": "^1.7.4",
+    "sharp": "^0.29.3"
   },
   "dependencies": {
     "parcel": "^2.10.3",
