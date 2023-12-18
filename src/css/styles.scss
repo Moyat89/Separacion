@@ -15,7 +15,8 @@ html {
         2px 2px 4px rgb(0 255 255 / .2);
     color: $color-theme;
     font-size: responsive(1rem, 1.2rem, 400px, 800px);
-    background-image: url(../img/portadabackground.png);
+    background-image: image-set(url("../img/portadabackground-responsive.png?as=webp") type("image/webp"),
+            url("../img/portadabackground-responsive.png?as=jpg") type("image/jpeg"));
     background-size: cover;
     min-height: 100%;
 }
@@ -32,16 +33,16 @@ a:hover {
 
 //Elementos especificos
 
-.inicio{
-    width:responsive(200px,400px);
-    height:responsive(100px,200px);
-    font-size: responsive(1rem,1.5rem);
-    border:solid 5px $color-theme;
+.inicio {
+    width: responsive(200px, 400px);
+    height: responsive(100px, 200px);
+    font-size: responsive(1rem, 1.5rem);
+    border: solid 5px $color-theme;
     box-shadow: 0 0 8px rgb(255 0 0 / .5),
-    -2px -2px 6px rgb(0 255 0 / .5),
-    2px 2px 4px rgb(0 255 255 / .5);
+        -2px -2px 6px rgb(0 255 0 / .5),
+        2px 2px 4px rgb(0 255 255 / .5);
     text-transform: uppercase;
-    z-index:1000;
+    z-index: 1000;
     position: absolute;
 }
 
@@ -61,11 +62,12 @@ a:hover {
     justify-content: center;
     align-items: center;
 
-    p+img{
-        width:90%;
-        margin-left: 5%;
+    picture {
+        width: auto;
         padding-top: 10%;
         clip-path: polygon(45% 0%, 80% 0, 55% 90%, 20% 90%);
+        margin: auto;
+        display: block;
     }
 }
 
@@ -106,22 +108,26 @@ a:hover {
 
     }
 
-    img{
+    img {
         height: 95%;
     }
 
 }
 
-@keyframes changelogo{
-    from {background-color: transparent;
-    content: url(../img/logo.svg);}
-    to {background-color: white;
-    content: url(../img/logo-transitioned.svg);
+@keyframes changelogo {
+    from {
+        background-color: transparent;
+        content: url(../img/logo.svg);
+    }
+
+    to {
+        background-color: white;
+        content: url(../img/logo-transitioned.svg);
     }
 }
 
-.logo-portada{
-    content:url(../img/logo.svg);
+.logo-portada {
+    content: url(../img/logo.svg);
     background-color: transparent;
     animation-duration: 10s;
     animation-name: changelogo;
@@ -130,7 +136,7 @@ a:hover {
     animation-delay: 3s;
 }
 
-.logo{
+.logo {
     background-color: white;
 }
 
@@ -144,8 +150,8 @@ a:hover {
     line-height: 2rem;
     overflow-y: scroll;
     padding-bottom: 100px
-
 }
+
 
 .header {
     h1 {
@@ -163,20 +169,21 @@ a:hover {
 
 }
 
-.cabecera{
+.cabecera {
     text-align: center;
     padding-top: 3%;
 }
+
 h1 a {
     text-decoration: none;
     color: white;
     letter-spacing: 1vw;
 }
 
-footer{
+footer {
     width: 100vw;
     position: fixed;
-    bottom:0;
+    bottom: 0;
 }
 
 
@@ -186,7 +193,7 @@ footer{
 .container-gen {
     padding-left: responsive(0px, 200px);
     padding-right: responsive(0px, 200px);
-  
+
 
 
 }
@@ -246,23 +253,29 @@ footer{
     }
 
 
-    .mark {
-        background-image: url(../img/detalles-severance.webp);
+    .detalles{
+
+        background-image: image-set(url("../img/detalles-severance-hero.webp") type("image/webp"),
+                url("../img/detalles-severance-hero.webp?as=jpg") type("image/jpeg"));
 
     }
 
-    .helly {
-        background-image: url(../img/making_of.webp);
-        
-    }
-
-    .dylan {
-        background-image: url(../img/chapters.webp);
+    .makingof {
+        background-image: image-set(url("../img/making_of.webp") type("image/webp"),
+                url("../img/making_of.webp?as=jpg") type("image/jpeg"));
 
     }
 
-    .irving {
-        background-image: url(../img/curiosidades.webp);
+    .chapters {
+        background-image: image-set(url("../img/chapters.webp") type("image/webp"),
+                url("../img/chapters.webp?as=jpg") type("image/jpeg"));
+
+    }
+
+    .curiosidades {
+        background-image: image-set(url("../img/curiosidades.webp") type("image/webp"),
+                url("../img/curiosidades.webp?as=jpg") type("image/jpeg"));
+
 
     }
 
@@ -348,7 +361,12 @@ figure {
 
 figure img {
     width: 75vw;
-    
+
+}
+
+img {
+    margin: auto;
+    display: block;
 }
 
 picture img {
@@ -360,9 +378,9 @@ picture img {
 
 
 
-.ficha{
+.ficha {
     padding-top: 20px;
-    width:15vh;
+    width: 15vh;
 }
 
 table {
@@ -389,21 +407,25 @@ table {
     }
 }
 
+
+.img-presentacion {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    width: 400px;
+}
+
 .pictures {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-    img {
-        width: 50%;
-    }
 }
-
-.img-presentacion{
-    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-}
-
 
 
 @media screen and (min-width: 571px) {
+    html {
+        background-image: image-set(url("../img/portadabackground.png?as=webp") type("image/webp"),
+                url("../img/portadabackground.png?as=jpg") type("image/jpeg"));
+    }
 
     body {
         overflow-y: scroll;
@@ -415,11 +437,13 @@ table {
     }
 
     figure img {
-        width: 70%;
-        
+        width: initial;
+
     }
 
-    picture img {
+
+
+    .destacada img {
         width: 70%;
         margin: auto;
         display: block;
@@ -436,6 +460,8 @@ table {
 
 }
 
+
+
 @media screen and (min-width: 992px) {
     html {
         background-position: initial;
@@ -445,14 +471,21 @@ table {
         overflow-y: auto;
     }
 
-    .content-cover {
+    .content-cover{
         width: 40vw;
         height: 80vh;
+        picture>img{
+           width: 100%;
+           height: auto;
+          
+        }
     }
+
     .header-gen * {
         padding-top: 0;
-        
+
     }
+
     .text-cover {
         overflow-y: scroll;
     }
@@ -485,18 +518,9 @@ table {
         display: block;
     }
 
-    figure img {
-        width: 60%;
-        
-    }
 
 
-    
-picture img {
-    width: 60%;
-    margin: auto;
-    display: block;
-}
+
 
     .text-category {
         overflow-y: scroll;

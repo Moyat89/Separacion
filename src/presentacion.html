@@ -20,18 +20,19 @@
     <!--Header con titulo y subtitulo-->
     <header class="header-gen">
       <div class="cabecera">
-        <img class="logo-portada" src="img/logo.svg" alt="logo"/>
-        <h1> <a href="index.html">SEPARACIÓN</a></h1> </div>
+        <img class="logo-portada" src="img/logo.svg" alt="logo" />
+        <h1> <a href="index.html">SEPARACIÓN</a></h1>
+      </div>
     </header>
     <div class="category-wrapper">
       <!--Contenedor del contenido principal-->
       <main class="text-category">
         <article>
           <h2> Presentación</h2>
-          <figure>
-            <img class="img-presentacion" src="img/presentacion.jpeg" alt="Imagen de la escena de opertura de Severance">
-            <figcaption>Imagen del <span lang="en">opening</span> de <cite lang="en">Severance</cite></figcaption>
-          </figure>
+
+          <img class="img-presentacion" srcset="img/presentacion400.jpg?as=webp, img/presentacion.jpeg?as=webp 2x,"
+            src="img/presentacion.jpeg" alt="Imagen del opening de Severance">
+
           <p>Bienvenidos a Separación, una fan web sobre <cite lang="en">Severance</cite> donde ponemos a vuestra
             disposición contenido sobre la serie como sus detalles de producción, entrevistas con el equipo,
             curiosidades detrás de las cámaras y detalles de cada episodio.</p>
@@ -59,7 +60,9 @@
       </main>
     </div>
   </div>
-  <footer><include src="navgen.html"></include></footer>
+  <footer>
+    <include src="navgen.html"></include>
+  </footer>
 </body>
 
 </html>

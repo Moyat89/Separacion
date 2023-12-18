@@ -10,7 +10,7 @@ html {
   text-shadow: 0 0 8px rgba(255, 0, 0, 0.2), -2px -2px 6px rgba(0, 255, 0, 0.2), 2px 2px 4px rgba(0, 255, 255, 0.2);
   color: rgb(130, 187, 135);
   font-size: responsive(1rem, 1.2rem, 400px, 800px);
-  background-image: url(../img/portadabackground-responsive.webp);
+  background-image: image-set(url("../img/portadabackground-responsive.png?as=webp") type("image/webp"), url("../img/portadabackground-responsive.png?as=jpg") type("image/jpeg"));
   background-size: cover;
   min-height: 100%;
 }
@@ -50,11 +50,12 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-.content-cover p + img {
-  width: 90%;
-  margin-left: 5%;
+.content-cover picture {
+  width: auto;
   padding-top: 10%;
   clip-path: polygon(45% 0%, 80% 0, 55% 90%, 20% 90%);
+  margin: auto;
+  display: block;
 }
 
 .nav-scroll-gen ul {
@@ -201,17 +202,17 @@ footer {
 .categorias ul li a:hover {
   filter: brightness(125%);
 }
-.categorias .mark {
-  background-image: url(../img/detalles-severance.webp);
+.categorias .detalles {
+  background-image: image-set(url("../img/detalles-severance-hero.webp") type("image/webp"), url("../img/detalles-severance-hero.webp?as=jpg") type("image/jpeg"));
 }
-.categorias .helly {
-  background-image: url(../img/making_of.webp);
+.categorias .makingof {
+  background-image: image-set(url("../img/making_of.webp") type("image/webp"), url("../img/making_of.webp?as=jpg") type("image/jpeg"));
 }
-.categorias .dylan {
-  background-image: url(../img/chapters.webp);
+.categorias .chapters {
+  background-image: image-set(url("../img/chapters.webp") type("image/webp"), url("../img/chapters.webp?as=jpg") type("image/jpeg"));
 }
-.categorias .irving {
-  background-image: url(../img/curiosidades.webp);
+.categorias .curiosidades {
+  background-image: image-set(url("../img/curiosidades.webp") type("image/webp"), url("../img/curiosidades.webp?as=jpg") type("image/jpeg"));
 }
 
 .text-category {
@@ -285,6 +286,11 @@ figure img {
   width: 75vw;
 }
 
+img {
+  margin: auto;
+  display: block;
+}
+
 picture img {
   width: 75vw;
   margin: auto;
@@ -316,20 +322,20 @@ table tbody * {
   padding-top: 1.5%;
 }
 
-.pictures {
-  display: flex;
-}
-.pictures img {
-  width: 50%;
-}
-
 .img-presentacion {
   clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  width: 400px;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 571px) {
-  html{
-    background-image: url(../img/portadabackground.webp);
+  html {
+    background-image: image-set(url("../img/portadabackground.png?as=webp") type("image/webp"), url("../img/portadabackground.png?as=jpg") type("image/jpeg"));
   }
   body {
     overflow-y: scroll;
@@ -339,9 +345,9 @@ table tbody * {
     width: 90vw;
   }
   figure img {
-    width: 70%;
+    width: initial;
   }
-  picture img {
+  .destacada img {
     width: 70%;
     margin: auto;
     display: block;
@@ -363,6 +369,10 @@ table tbody * {
   .content-cover {
     width: 40vw;
     height: 80vh;
+  }
+  .content-cover picture > img {
+    width: 100%;
+    height: auto;
   }
   .header-gen * {
     padding-top: 0;
@@ -390,14 +400,6 @@ table tbody * {
     font-size: 2vw;
   }
   #text-placeholder {
-    display: block;
-  }
-  figure img {
-    width: 60%;
-  }
-  picture img {
-    width: 60%;
-    margin: auto;
     display: block;
   }
   .text-category {
