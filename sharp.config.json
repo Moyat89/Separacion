@@ -6,7 +6,6 @@
     "quality":80 
   },
   "png": {
-    "palette": true,
     "quality":80
   }
 }

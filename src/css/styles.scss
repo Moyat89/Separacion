@@ -31,7 +31,7 @@ a:hover {
     color: white;
 }
 
-//Elementos especificos
+//Portada
 
 .inicio {
     width: responsive(200px, 400px);
@@ -114,6 +114,7 @@ a:hover {
 
 }
 
+//Animación
 @keyframes changelogo {
     from {
         background-color: transparent;
