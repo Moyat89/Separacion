@@ -94,7 +94,7 @@ a:hover {
   display: block;
 }
 
-img:not(footer)  {
+img:not(footer > .logo)  {
   width: auto;
   height: auto;
 }
