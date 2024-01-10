@@ -94,7 +94,7 @@ a:hover {
   display: block;
 }
 
-img {
+img:not(footer)  {
   width: auto;
   height: auto;
 }
@@ -197,10 +197,7 @@ footer {
   bottom: 0;
 }
 
-footer img{
-  height: 50%;
-  width: auto;
-}
+
 
 /*Categoria*/
 .container-gen {
