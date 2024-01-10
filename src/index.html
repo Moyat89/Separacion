@@ -11,7 +11,21 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
   </style>
-  <script async type="text/javascript" src="js/butonEnter.js"></script>
+  <script async type="text/javascript">
+         function entrar() {
+        document.getElementById('boton').style.visibility = 'hidden';
+        document.getElementById('nav').style.visibility = 'visible';
+        document.getElementById('text').style.visibility = 'visible';
+        document.getElementById("desplegable").style.display = "block"; 
+        document.getElementById("desplegable").style.backgroundColor = "rgba(2, 5, 7, 0.8)";
+        document.getElementById("desplegable").style.border="2px solid black";
+      }
+
+      window.onload = function() {
+        var btn = document.getElementById("boton");
+        btn.onclick = entrar;
+    }
+  </script>
   <link rel="icon" type="image/x-icon" href="img/computadora.png">
 </head>
 
@@ -21,7 +35,7 @@
     <div class="content-cover" id="desplegable">
       <!--Menú de navegación con include-->
       <!-- Botón con función para mostrar el contenido-->
-      <button fetchpriority="high" as="image" type="button" class="inicio" id="boton">Iniciar Sesión<br>Lumon Industries</button>
+      <button  type="button" class="inicio" id="boton">Iniciar Sesión<br>Lumon Industries</button>
       <div class="text-cover" id="text">
         <!--Header con titulo y subtitulo-->
         <header class="header">
@@ -45,7 +59,19 @@
     <include src="navgen.html"></include>
   </footer>
   <!--Función que esconde el contenido para que haya un botón de entrada-->
-  <script async type="text/javascript" src="js/checkIn.js"></script>
+  <script async type="text/javascript" >      function checkin(){
+    document.getElementById('nav').style.visibility = 'hidden';
+    document.getElementById('text').style.visibility = 'hidden';
+    document.getElementById("desplegable").style.display = "flex"; 
+    document.getElementById("desplegable").style.justifyContent = "center";
+    document.getElementById("desplegable").style.backgroundColor = "initial";
+    document.getElementById("desplegable").style.border="none";
+    document.getElementById("body").style.display = "flex"; 
+    document.getElementById("body").style.justifyContent = "center";
+    document.getElementById("body").style.alignItems = "center"; 
+  };
+  
+checkin();</script>
 </body>
 
 </html>
