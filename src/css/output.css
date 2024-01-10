@@ -86,13 +86,17 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-.content-cover picture {
+.content-cover picture{
 
-  aspect-ratio: auto;
   padding-top: 10%;
   clip-path: polygon(45% 0%, 80% 0, 55% 90%, 20% 90%);
   margin: auto;
   display: block;
+}
+
+.content-cover picture > img {
+  width: 100%;
+  height: auto;
 }
 
 .nav-scroll-gen ul {
