@@ -99,6 +99,8 @@ img {
   height: auto;
 }
 
+
+
 .nav-scroll-gen ul {
   background-color: rgb(2, 5, 7);
   list-style: none;
@@ -193,6 +195,10 @@ footer {
   width: 100vw;
   position: fixed;
   bottom: 0;
+}
+
+footer img{
+  height: fit-content;
 }
 
 /*Categoria*/
