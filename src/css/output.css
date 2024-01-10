@@ -94,7 +94,7 @@ a:hover {
   display: block;
 }
 
-.content-cover picture > img {
+img {
   width: 100%;
   height: auto;
 }
