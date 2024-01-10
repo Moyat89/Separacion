@@ -1,4 +1,11 @@
 /*Elementos generales*/
+@font-face {
+  font-family: "Share Tech Mono";
+  src: url(/src/fonts/ShareTechMono-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
