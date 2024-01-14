@@ -205,10 +205,7 @@ footer {
 
 
 /*Categoria*/
-.container-gen {
-  padding-left: responsive(0px, 200px);
-  padding-right: responsive(0px, 200px);
-}
+
 
 .header-gen {
   padding-top: 10px;
