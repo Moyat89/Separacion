@@ -428,10 +428,7 @@ table tbody * {
     padding-top: 0;
   }
 
-  .container-gen {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+
   .category-wrapper {
     display: flex;
     height: 85vh;
