@@ -206,8 +206,8 @@ footer {
 
 /*Categoria*/
 .container-gen {
-  padding-left: responsive(0px, 200px);
-  padding-right: responsive(0px, 200px);
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .header-gen {
@@ -428,7 +428,12 @@ table tbody * {
     padding-top: 0;
   }
 
-
+  .container-gen {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
   .category-wrapper {
     display: flex;
     height: 85vh;
