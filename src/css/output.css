@@ -208,6 +208,8 @@ footer {
 .container-gen {
   padding-left: responsive(0px, 200px);
   padding-right: responsive(0px, 200px);
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .header-gen {
@@ -430,9 +432,7 @@ table tbody * {
   .text-cover {
     overflow-y: scroll;
   }
-  .container-gen {
 
-  }
   .category-wrapper {
     display: flex;
     height: 85vh;
