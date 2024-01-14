@@ -429,10 +429,8 @@ table tbody * {
   }
 
   .container-gen {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .category-wrapper {
     display: flex;
